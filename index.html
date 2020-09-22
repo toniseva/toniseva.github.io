@@ -37,11 +37,8 @@
         background-color:whitesmoke;
       }
 
-      #emailpicture {
-        float: left;
-  width: 300px;
- 
-  padding: 10px;
+      .footer {
+        margin: auto;
       }
 
     </style>
@@ -485,7 +482,7 @@
 
           </div>
           <div class="col-lg-5">
-            <h3>Lieksa</h3>
+     
             <ul class="list-unstyled mb-5">
               <li class="mb-3">
                 <strong class="d-block mb-1">Address</strong>
@@ -594,8 +591,29 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   
   <script src="js/main.js"></script>
+
+  <input type="button" value="Send Email" onclick="sendEmail()">
+  <script>
+function sendEmail() {
+Email.send({
+    Host : "smtp.live.com",
+    Username : "toni.sevastjanoff@hotmail.com",
+    Password : "Muumilaakso101",
+    To : 'toni.sevastjanoff@hotmail.com',
+    From : "yourgithubpage@example.com",
+    Subject : "Test email",
+    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+// }).then(
+    message => alert(message)
+// );
+}
+
+
+
+
+
   </body>
 </html>
