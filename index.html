@@ -26,12 +26,11 @@
     
     <style>
       #emaillink {
-        text-align:center;display:block;
+    
         font-weight: bold;
-        font-size: xx-large;
-        text-shadow: 2px 2px black;
 
-      }
+
+      } 
 
       #contact-section {
         background-color:whitesmoke;
@@ -425,11 +424,24 @@
       <div class="container">
         <div class="row">
           <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center mb-5">Contact me</h2>
+            <h2 class="section-title text-center mb-5">Contact information</h2>
           </div>
         </div>
         <div class="row justify-content-between">
           <div class="col-lg-6">
+
+            <div class="col-lg-5">
+              <h3 class="footer-title">Follow Me</h3>
+              <a href="https://twitter.com/ToniSevastjano1" class="social-circle m-2"><span class="icon-twitter"></span></a>
+              <a href="https://fi-fi.facebook.com/toni.sevastjanoff" class="social-circle m-2"><span class="icon-facebook"></span></a>
+              <!-- <a href="#" class="social-circle m-2"><span class="icon-instagram"></span></a>
+              <a href="#" class="social-circle m-2"><span class="icon-dribbble"></span></a> -->
+              <a href="https://www.linkedin.com/in/toni-sevastjanoff-460a721b6/?originalSubdomain=fi" class="social-circle m-2"><span class="icon-linkedin"></span></a>
+            </div>
+
+
+
+            
             <!-- <form action="#" class="form">
               <div class="row mb-4">
                 <div class="form-group col-6">
@@ -465,20 +477,9 @@
               </div>
               
             </form> -->
-            
-            <!-- <img src="images/email.png" width="90px" height="95px" vertical-align="center"> -->
-
-<!-- 
-            <img id="emailpicture" src="images/email.png" alt="email" style="float:left;width:60px;height:60px;"> -->
-
-            <a id="emaillink" href="mailto:toni.sevastjanoff@hotmail.com">Send e-mail</a>
           
 
-            <!-- <div class="col-md-6">
-              <input type="submit" class="btn btn-primary" value="Send e-mail">
-            </div>  -->
-
-
+          
 
           </div>
           <div class="col-lg-5">
@@ -494,7 +495,8 @@
               </li>
               <li class="mb-3">
                 <strong class="d-block mb-1">Email</strong>
-                <span>toni.sevastjanoff@hotmail.com</span>
+               
+                <a id="emaillink" href="mailto:toni.sevastjanoff@hotmail.com"><span>toni.sevastjanoff@hotmail.com</span></a>
               </li>
             </ul>
 
@@ -518,10 +520,10 @@
       </div>
     </section>
 
-    <footer class="site-section bg-light footer">
+    <!-- <footer class="site-section bg-light footer">
       <div class="container">
         <div class="row mb-5">
-          <!-- <div class="col-md-3">
+          <div class="col-md-3">
             <h3 class="footer-title">Services</h3>
             <p><span class="d-inline-block d-md-block">203 Fake St. Mountain View,</span> San Francisco, California, USA</p>
           </div> -->
@@ -553,12 +555,12 @@
               </div>
             </div>
           </div> -->
-          <div class="col-md-3">
+          <!-- <div class="col-md-3">
             <h3 class="footer-title">Follow Me</h3>
             <a href="https://twitter.com/ToniSevastjano1" class="social-circle m-2"><span class="icon-twitter"></span></a>
             <a href="https://fi-fi.facebook.com/toni.sevastjanoff" class="social-circle m-2"><span class="icon-facebook"></span></a>
-            <!-- <a href="#" class="social-circle m-2"><span class="icon-instagram"></span></a>
-            <a href="#" class="social-circle m-2"><span class="icon-dribbble"></span></a> -->
+            <a href="#" class="social-circle m-2"><span class="icon-instagram"></span></a>
+            <a href="#" class="social-circle m-2"><span class="icon-dribbble"></span></a>
             <a href="https://www.linkedin.com/in/toni-sevastjanoff-460a721b6/?originalSubdomain=fi" class="social-circle m-2"><span class="icon-linkedin"></span></a>
           </div>
         </div>
@@ -566,18 +568,18 @@
         <div class="row">
           <div class="col-12 text-center">
             <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 <!-- Copyright &copy;
                 <script>
                   document.write(new Date().getFullYear());
                 </script> All rights reserved | This template is made with <i class="icon-heart"
                   aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
               </p>  
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
   </div> <!-- .site-wrap -->
 
@@ -594,24 +596,6 @@
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   
   <script src="js/main.js"></script>
-<!-- 
-  <input type="button" value="Send Email" onclick="sendEmail()"> -->
-  <script>
-function sendEmail() {
-Email.send({
-    Host : "smtp.live.com",
-    Username : "toni.sevastjanoff@hotmail.com",
-    Password : "Muumilaakso101",
-    To : 'toni.sevastjanoff@hotmail.com',
-    From : "yourgithubpage@example.com",
-    Subject : "Test email",
-    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-// }).then(
-    message => alert(message)
-// );
-}
-
-
 
   </body>
 </html>
